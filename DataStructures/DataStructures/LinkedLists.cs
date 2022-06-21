@@ -115,7 +115,6 @@ namespace DataStructure
             //Check until the temp next nodes's next loction is null
             while (temp.next.next != null)
             {
-               
                 temp = temp.next;
             }
             //After getting this node change its location to null
@@ -123,7 +122,7 @@ namespace DataStructure
         }
         public void Display()
         {
-            //temp variable will head
+            
             Node temp = Head;
             //Check wheather list is empty or not 
             if (temp == null)
@@ -141,37 +140,37 @@ namespace DataStructure
             }
 
         }
-        public void DeleteNodeWithdata(int value)
-        {
-            if (Head == null)
-            {
-                Console.WriteLine("Nothing to delete");
-            }
+        //public void DeleteNodeWithdata(int value)
+        //{
+        //    if (Head == null)
+        //    {
+        //        Console.WriteLine("Nothing to delete");
+        //    }
 
-            Node prev = this.Head;
+        //    Node prev = this.Head;
              
-            Node pointsToValue = this.Head;
-            while (pointsToValue.data != value)
-            {
+        //    Node pointsToValue = this.Head;
+        //    while (pointsToValue.data != value)
+        //    {
 
-                if (pointsToValue == null)
-                {
-                    break;
-                }
-                pointsToValue = pointsToValue.next;
-            }
-            //Check until we get the previous node of node to be deleted
-            while (prev.next.data != value)
-            {
-                if (prev == null)
-                {
-                    break;
-                }
-                prev = prev.next;
-            }
-            //Change location of previous node to node to be deleted location
-            prev.next = pointsToValue.next;
+        //        if (pointsToValue == null)
+        //        {
+        //            break;
+        //        }
+        //        pointsToValue = pointsToValue.next;
+        //    }
+        //    //Check until we get the previous node of node to be deleted
+        //    while (prev.next.data != value)
+        //    {
+        //        if (prev == null)
+        //        {
+        //            break;
+        //        }
+        //        prev = prev.next;
+        //    }
+        //    //Change location of previous node to node to be deleted location
+        //    prev.next = pointsToValue.next;
 
-        }
+        //}
     }
 }

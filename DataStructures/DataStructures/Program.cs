@@ -24,11 +24,11 @@ namespace DataStructure
             //linkedLists.Display();
             //Console.WriteLine("\n-------------------------------");
 
-            //////UC-2
-            ////linkedLists.AddNode(70);
-            ////linkedLists.AddNode(30);
-            ////linkedLists.AddNode(56);
-            ////linkedLists.Display();
+            //UC-2
+            //linkedLists.AddNode(70);
+            //linkedLists.AddNode(30);
+            //linkedLists.AddNode(56);
+            //linkedLists.Display();
             //Console.WriteLine("\n-------------------------------");
 
             //////UC-3
@@ -54,7 +54,7 @@ namespace DataStructure
             //linkedLists.Display();
             //Console.WriteLine("\n-------------------------------");
 
-            ////UC-6
+            //UC-6
             //linkedLists.AppendNode(56);
             //linkedLists.AppendNode(30);
             //linkedLists.AppendNode(70);
@@ -97,28 +97,35 @@ namespace DataStructure
             //Stack & Queue
             //UC-1
             Stack stack = new Stack();
+            //Insert an element on to the top of thestack.
             stack.Push(70);
             stack.Push(30);
             stack.Push(56);
             stack.DisplayStack();
             stack.Top();
 
+            ////UC-2
+            //Delete the topmost element and return it.
+            stack.pop();
+            stack.DisplayStack();
 
         }
     }
 }
 
 
-//UC-1
-//Ability to create a Stack of 56->30->70
+//UC-2
+//Ability to peak and pop from the Stack till it is empty
+//56->30->70
 //- Use LinkedList to do the Stack Operations
-//- Here push will internally call add method on LinkedList.
-//- So 70 will be added first then 30 and then 56 to make 56 on top of the Stack
 
 //Result
 //Added 70 at start of the linkedlist
-// Added 30 at start of the linkedlist
-// Added 56 at start of the linkedlist
+//Added 30 at start of the linkedlist
+//Added 56 at start of the linkedlist
 //Stack:
 // Linked List :
-//56-> 30-> 70
+//70-> 30-> 56 Removed from linkedlist :70
+//Stack:
+//Linked List :
+//30-> 56
