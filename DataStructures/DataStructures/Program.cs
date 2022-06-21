@@ -98,34 +98,47 @@ namespace DataStructure
             //UC-1
             Stack stack = new Stack();
             //Insert an element on to the top of thestack.
-            stack.Push(70);
-            stack.Push(30);
-            stack.Push(56);
-            stack.DisplayStack();
-            stack.Top();
+            //stack.Push(70);
+            //stack.Push(30);
+            //stack.Push(56);
+            //stack.DisplayStack();
+            //stack.Top();
 
-            ////UC-2
+            //////UC-2
+            ////Delete the topmost element and return it.
+            //stack.pop();
+            //stack.DisplayStack();
+
+            ////UC-3
             //Delete the topmost element and return it.
-            stack.pop();
-            stack.DisplayStack();
+            Queue queue = new Queue();
+            Node nodeA = new Node(56);
+            Node nodeB = new Node(30);
+            Node nodeC = new Node(70);
+
+            queue.Enqueue(56);
+            queue.Enqueue(30);
+            queue.Enqueue(70);
+            queue.DisplayQueue();
+            queue.Top();
+
+
 
         }
     }
 }
 
 
-//UC-2
-//Ability to peak and pop from the Stack till it is empty
-//56->30->70
-//- Use LinkedList to do the Stack Operations
+//UC-3
+//Ability to create a Queue of 56->30->70
+//- Use LinkedList to do the Queue Operations
+//- Here enqueu will internally call append method on LinkedList.
+//- So 56 will be added first then 30 and then 70 to make 56 on top of the Stack
 
 //Result
-//Added 70 at start of the linkedlist
-//Added 30 at start of the linkedlist
 //Added 56 at start of the linkedlist
-//Stack:
+//Added 30 at start of the linkedlist
+//Added 70 at start of the linkedlist
+//Queue:
 // Linked List :
-//70-> 30-> 56 Removed from linkedlist :70
-//Stack:
-//Linked List :
-//30-> 56
+//56-> 30-> 70
