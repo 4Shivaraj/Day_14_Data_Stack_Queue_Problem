@@ -32,6 +32,10 @@ namespace DataStructure
             //Display the topmost node in queue
             return linkedList.Head;
         }
-
+        public void Dequeue()
+        {
+            //Delete the node from queue
+            linkedList.DeleteNodeAtFirst();
+        }
     }
 }

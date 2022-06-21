@@ -115,25 +115,24 @@ namespace DataStructure
             Node nodeA = new Node(56);
             Node nodeB = new Node(30);
             Node nodeC = new Node(70);
-
             queue.Enqueue(56);
             queue.Enqueue(30);
             queue.Enqueue(70);
             queue.DisplayQueue();
             queue.Top();
 
+            //UC4: Check dequeue operation queue
 
-
-        }
+            queue.Dequeue();
+            queue.DisplayQueue();
+        } 
     }
 }
 
 
-//UC-3
-//Ability to create a Queue of 56->30->70
-//- Use LinkedList to do the Queue Operations
-//- Here enqueu will internally call append method on LinkedList.
-//- So 56 will be added first then 30 and then 70 to make 56 on top of the Stack
+//UC-4
+// Ability to dequeue from the beginning
+//-Use LinkedList to do the Queue Operations
 
 //Result
 //Added 56 at start of the linkedlist
@@ -141,4 +140,7 @@ namespace DataStructure
 //Added 70 at start of the linkedlist
 //Queue:
 // Linked List :
-//56-> 30-> 70
+//56-> 30-> 70Removed from linkedlist :56
+//Queue:
+//Linked List :
+//30-> 70
